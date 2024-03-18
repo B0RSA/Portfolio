@@ -17,8 +17,9 @@ $(".btnClaro").click(function(){
     $(".btnNoturno").show();
     $("#contatoClaro").hide();
     $("#contatoNoturno").show();
-    $('body').css('background-color', 'black');
+    $('body').css('background-color', '#03092B');
     $('body').css('color', 'white');
+    $('.galeriaFotoPequena').css('border', 'white solid 2px');
     if(window.matchMedia("(min-width:769px)").matches) {
         $('li a').css('color', 'white')
     }
@@ -31,7 +32,18 @@ $(".btnNoturno").click(function(){
     $("#contatoNoturno").hide();
     $('body').css('background-color', 'white');
     $('body').css('color', 'black');
+    $('.galeriaFotoPequena').css('border', 'black solid 2px');
     if(window.matchMedia("(min-width:769px)").matches) {
         $('li a').css('color', 'black')
     }
+});
+
+$("#minhaFotoTroca").click(function(){
+    $("#minhaFoto").show();
+    $("#fotoAmor").hide();
+});
+
+$("#fotoLaraTroca").click(function(){
+    $("#minhaFoto").hide();
+    $("#fotoAmor").show();
 });

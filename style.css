@@ -99,12 +99,26 @@
     margin-left:10%;
     align-items: center;
 }
-#minhaFoto{
+.galeriaFotoGrande{
     width: 80%;
     height: 80%;
     border-radius: 10%;
     display: block;
     margin: 1% 0;
+}
+#fotoAmor{
+    display: none;
+}
+.fotosPequenas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.galeriaFotoPequena{
+    max-width: 20%;
+    border: black solid 4%;
+    border-radius: 10%;
+    margin: 2%;
 }
 .textoInicio{
     max-width: 80%;
@@ -277,10 +291,20 @@ footer{
         display: flex;
         flex-direction: row;
     }
-    #minhaFoto{
+    .galeriaFotoGrande{
         width: 25%;
         height: 25%;
         margin-left: 10%;
+    }
+    #minhaFoto{
+        margin-left: 0;
+    }
+    #fotoAmor{
+        display: inline;
+        margin-left: 2%;
+    }
+    .fotosPequenas{
+        display: none;
     }
     .textoInicio{
         margin-left: 2%;
