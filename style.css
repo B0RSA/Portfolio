@@ -116,7 +116,7 @@
 }
 .galeriaFotoPequena{
     max-width: 20%;
-    border: black solid 4%;
+    border: black solid 4px;
     border-radius: 10%;
     margin: 2%;
 }
